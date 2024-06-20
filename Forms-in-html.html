@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!--
+       forms:
+    Seaction of document which contains control such as labels,radio buttons to take input from user
+
+       attributes:
+       1.action:
+              specifies where to form data
+       2.method:
+               specifies how to send form data (GET POST)
+       3.traget:
+                  specifies where to open the form data
+       4.enctype:
+                 'multipart/form-data' or text/plain 
+       5.autocomplete:
+       6.novalidate: no validation                     
+    -->
+    <table border="1px" style="text-align: center;" cellspacing="5" cellpadding="10">
+        
+            <td colspan="2">
+                <h2>Regristration Form</h2>
+            </td>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Student Id:</td>
+            <td><input type="text" value="20" readonly></td>
+        <tr>
+        
+        <tr>
+            <td><label for="firstname">Enter Name:</label></td>
+            <td><input type="text" id="firstname"> </td>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>Enter Address:</label></td>
+            <td><textarea rows="10" cols="30"></textarea> </td>
+        </tr>
+
+        <tr>
+            <td><label for="">Date of Birth:</label></td>
+            <td><input type="date"></td>
+        </tr>
+
+        <tr>
+            <td><label for="">Email:</label></td>
+            <td><input type="email"></td>
+        </tr>
+
+        <tr>
+            <td><label for="">password:</label></td>
+            <td><input type="password" placeholder="Enter a password"></td>
+        </tr>
+
+        <tr>
+            <td>Select City:</td>
+            <td>
+                <select>
+                  <option>Mumbai</option>
+                  <option value="">Pune</option>
+                  <option value="">Delhi</option>
+                </select>
+            </td>   
+        </tr>
+
+        <tr>
+            <td>Upload File:</td>
+            <td><input type="file" multiple></td>
+        </tr>
+
+        <tr>
+            <td>Gender:</td>
+            <td><input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female</td>
+        </tr>
+  
+        <tr>
+            <td>Hobbies:</td>
+            <td>
+                <input type="checkbox">Sports
+                <input type="checkbox">Songs
+                <input type="checkbox">Swimming
+            </td>
+        </tr>
+  
+        <tr>
+            <td colspan="2">
+                <input type="submit">
+                <button>Reset</button>
+            </td>
+        </tr>
+        
+    </table>
+</body>
+</html>

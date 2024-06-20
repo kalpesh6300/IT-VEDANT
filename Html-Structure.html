@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>HTML Structure</title>
+</head>
+<body>
+    <!-----------
+       table:
+                 It is used to create a table
+       thead:
+                 It is used to create a header in table
+       tbody: 
+                 It is used to create a body in table
+       tfoot:
+                 It is used to create a footer in table
+       tr:
+                 It is used to create a row in table
+       th:
+                 It is used to create a header in table
+       td:
+                 It is used to create a data in table
+       cellspacing:
+                 It is the space between each cell in table
+       cellpadding:
+                 It is the space between the content and the border of the cell
+                 -->
+    <h1>Welcome to IT Vedant</h1>
+    <table border="1px" cellspacing="10" cellpadding="10">
+        <caption>Student Details</caption>
+        <thead>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Student Address</th>
+            <th colspan="3">Student Marks</th> <!--Specifies number of columns a cell should span
+                                                 Specifies number of rows a cell should span-->
+            <th>Students Courses</th>
+            <th>Student Contact</th>
+        </thead>
+        <tbody>
+            <tr>
+               <td>102</td>
+               <td>Kalpesh</td>
+               <td>Bhiwandi Bhadwad</td>
+               <td>35</td>
+               <td>32</td>
+               <td>34</td>
+               <td rowspan="2">Full Stack Development with Python</td>
+               <td>9684548524</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Rutuja</td>
+                <td>Bhiwandi Bhadwad</td>
+                <td>36</td>
+                <td>32</td>
+                <td>34</td>
+                
+                <td>9458454854</td>
+             </tr>
+
+             <tr>
+                <td>104</td>
+                <td>Sanika</td>
+                <td>kalyan</td>
+                <td>37</td>
+                <td>32</td>
+                <td>34</td>
+                <td>UX/UI</td>
+                <td>9458444354</td>
+             </tr>
+
+             <tr>
+                <td>105</td>
+                <td>Gauri</td>
+                <td>Mulund</td>
+                <td>36</td>
+                <td>32</td>
+                <td>34</td>
+                <td>Machine Learning</td>
+                <td>9458454854</td>
+             </tr>
+
+             <tr>
+                <td>106</td>
+                <td>Abhishek</td>
+                <td>Kopar</td>
+                <td>38</td>
+                <td>32</td>
+                <td>34</td>
+                <td>Full Stack Development with Python</td>
+                <td>9448454854</td>
+             </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="8">Congratulations all Students!!!!!!!!!!</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
