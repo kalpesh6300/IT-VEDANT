@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        p {
+          text-align: center;
+          color: red;
+        } 
+
+        .about{
+            text-align: center;
+            background-color: black;
+            color: chartreuse;
+        }
+
+        #main{
+            text-align: center;
+            background-color: rgb(14, 63, 211);
+            color: white;
+        }
+
+        div p {
+             background-color: yellow;
+        } 
+        /*
+        div>p {
+            color: blue;
+            font-size: 30px;
+            font-family:Verdana, Tahoma, sans-serif;
+        }
+
+        div+p {
+            color:greenyellow;
+            font-size: 50px;
+            font-family:Verdana, Tahoma, sans-serif;
+        }
+
+        div~p {
+            color: plum;
+            font-size: 70px;
+            font-family:Verdana, Tahoma, sans-serif;
+        }*/
+
+        /*****************Attribute Selectors****************************/
+        a[target] {
+            background-color: rgb(213, 166, 39);
+            font-size: 30px;
+        }
+
+        a[target="_blank"] {
+            background-color: yellow;
+        }
+
+        [title~="pot_1"] {
+            border: 5px solid rgb(12, 207, 41);
+        }
+    
+        [class|="top"] {
+             background: rgb(10, 181, 249);
+        }
+
+        [class^="top"] {
+         background: yellow;
+        }
+
+        [class$="top"] {
+            background:green;
+        }
+    </style>
+</head>
+<body>
+    <!-------------------****Basic Selectors*****-------------------->
+    <!---Element Selector------------->
+    <p>Core Web Design</p>
+    <p>Testing In Python</p>
+    <p>MongoDB</p>
+    <!-------------------------------->
+ 
+    <!---Class Selector--------------->
+    <h1 class="about">Hello World</h1>
+    <p class="about">Hello Everyone</p> 
+    <!-------------------------------->
+
+    <!---ID Selector------------------>
+    <h1 id="main">Breaking Newz</h1>
+    <!-------------------------------->
+    <!---------------------------------------------------------------->
+
+    <!----------------****Combinator Selectors****-------------------->
+    <!--Descendant Selector(Space)
+        Child Selector (>)
+        Adjacent Sibling Selector (+)
+        General Sibling Selector (~)
+    ---->
+    <div>
+        <p>Dog</p>
+        <p>Cat</p>
+        <section>
+            <p>Mutiple Breeds Available in Our Website</p>
+        </section>
+    </div>
+    <!-------------------------------------------------------------------->
+    <!----------------****Attribute Selectors****------------------------->
+
+    <!---------------Attribute-------->
+    <a href="https://www.youtube.com">youtube.com</a>
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
+    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a><br><br>
+
+    <!---- [attribute~="value"]------->
+    <img src="images/product3.png" title="pot_1" width="150" height="113">
+    <img src="images/product5.png" title="pot_2" width="224" height="162">
+    <!-------------------------------->
+
+    <!------[attribute|="value"] ----->
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello Everyone!</p>
+    <p class="topcontent">Thank you for coming!</p>
+    <!-------------------------------->
+</body>
+</html>
