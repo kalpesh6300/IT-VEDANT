@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/**************NavBar Start****************************/
+div#navbarSupportedContent {
+    margin-right: 93px;
+    margin-left: 393px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    font-weight: 700;
+    margin-top: 26px;
+}
+
+a.nav-link{
+    margin-right: 15px;
+    color: black;
+    font-weight: 700;
+    font-size: large;
+}
+
+a.nav-link.active{
+    text-decoration: overline 5px #ff662e; 
+}
+
+a.nav-link:hover{
+    color: black !important;
+    text-decoration: overline 5px #ff662e;   
+}
+
+i.fa-solid.fa-magnifying-glass,
+i.fa-regular.fa-user,
+i.fa-regular.fa-heart,
+i.fa-solid.fa-bag-shopping
+{
+    padding-right: 20px;
+}
+
+i.fa-solid.fa-magnifying-glass:hover,
+i.fa-regular.fa-user:hover,
+i.fa-regular.fa-heart:hover,
+i.fa-solid.fa-bag-shopping:hover
+{
+    color: #ff662e;
+}
+/**************Main Home Start*************************/
+.home_head::before{
+    content:'';
+    display: block;
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/home-img.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index:-1;
+}
+
+.head{
+    font-size: 64px;
+}
+
+.home_head{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 110px;
+
+}
+
+button.home_btn {
+    font-size: large;
+    padding: 15px;
+    border: none;
+    background-color: #ff662e;
+    color: white;
+}
+
+button.home_btn:hover{
+    background-color: black;
+    color: white;
+}
+/**************Top Categories*************************/
+
+/*************Top Picks section start******************/
+.category-head {
+    margin-top: 20%;
+    text-align: center;
+}
+
+.card {
+    border: none;
+    text-align: center;
+}
+
+.picks-head {
+    margin-top: 40px;
+    text-align: center;
+}
+
+i.fa-solid.fa-star {
+    color: brown;
+}
+
+h5.rupee {
+    color: darkcyan;
+}
+/*************Top Picks section end******************/
+
+.col-md-6 {
+    text-align: center;
+    font-size: 22px;
+}
+
+i.fa-solid.fa-paw {
+    font-size: 25px;
+    color: darkgray;
+}
