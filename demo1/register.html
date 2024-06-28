@@ -30,7 +30,8 @@
             }
         
 		body{
-			background: #001113;  /* fallback for old browsers */
+			background: #001113; 
+            margin-bottom: 50px;
 		}
 
     button.btn.btn-primary {
@@ -40,12 +41,26 @@
     border-radius: 0;
     }
 
+    button.btn.btn-primary:hover 
+    {
+
+        background-color: #f1f1f1 !important;
+        color: black !important;
+        
+    }
+
+    a {
+    color: white;
+    }
+
+    a:hover {
+        text-decoration: none !important;
+    }
+
 	</style>
 </head>
 <body>
-	<div>
-		
-	</div>
+	
 	<div class="container">
 		<h2><i class="fa-solid fa-paw"></i> Registration Form <i class="fa-solid fa-paw"></i></h2>
 	<form action="" method="post">
@@ -59,7 +74,7 @@
     </div>
     <div class="form-group">
         <label for="phoneno">Phone Number</label>
-        <input type="text" class="form-control" id="phoneno" name="phoneno">
+        <input type="number" class="form-control" id="phoneno" name="phoneno">
     </div>
     <div class="form-group">
         <label for="email1">Email address</label>
@@ -69,7 +84,10 @@
         <label for="Password">Password</label>
         <input type="password" class="form-control" id="Password" name="password">
     </div>
-    <a class="nav-link" id="register" href="login.html" target="_blank"><button type="submit" class="btn btn-primary" name="create">Sign up</button></a>
+    
+
+        <button type="submit" class="btn btn-primary" name="create"><a href="login.html">Sign up</a></button>
+    
 </form>
 </div>
 </body>
